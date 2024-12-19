@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking - Chic Hat Styles</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #2d89ef;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2d89ef;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        form input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            background: #2d89ef;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #236bbf;
+        }
+        .order-status {
+            margin-top: 20px;
+            padding: 20px;
+            background: #e8f4fd;
+            border: 1px solid #2d89ef;
+            border-radius: 8px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Order Tracking</h1>
+    </header>
+
+    <div class="container">
+        <h2>Track Your Custom Hat Order</h2>
+        <form action="#" method="GET">
+            <label for="order-id">Enter Your Order ID:</label>
+            <input type="text" id="order-id" name="order-id" placeholder="e.g., CHS123456" required>
+            <button type="submit">Track Order</button>
+        </form>
+
+        <div class="order-status">
+            <p>Your order status will appear here after entering a valid Order ID.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Chic Hat Styles. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
